@@ -8,6 +8,8 @@ name = "Data Analyst"
 # List example
 numbers = [1, 2, 3, 4, 5]
 
+doubleNumber = [x*2 for x in numbers]
+
 # Dictionary example
 person = {
     "name": "John",
@@ -75,3 +77,5 @@ if __name__ == "__main__":
         {"name": "Minh", "score": 7.0},
         {"name": "Hùng", "score": 6.5}
     ]))
+
+    print(doubleNumber);
