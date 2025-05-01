@@ -1,3 +1,8 @@
+# Là gì?
+# Generator là một hàm sinh ra dữ liệu từng phần, dùng từ khóa yield.
+
+# Không tạo toàn bộ list → tiết kiệm bộ nhớ, phù hợp với dữ liệu lớn.
+
 from itertools import islice
 
 def count_up_to(n):
@@ -5,6 +10,7 @@ def count_up_to(n):
         yield i
 gen = count_up_to(5)
 print(next(gen))
+
 
 def fibonacci(n):
     a, b = 0, 1

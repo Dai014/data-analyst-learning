@@ -1,3 +1,11 @@
+# 1. List Comprehension
+# 🔹 Là gì?
+# Là cách viết nhanh, ngắn gọn để tạo list từ vòng lặp.
+
+# Nó thay cho việc tạo list rồi dùng for để thêm từng phần tử.
+
+
+
 #List Comprehension
 squares = [x**2 for x in range(10)]
 print(squares)
@@ -8,7 +16,7 @@ print(evens)
 odd = [x for x in range(10) if x%2 == 1]
 print(odd)
 
-pairs = [(x, y) for x in [1,2,3] for y in [7,8]]
+pairs =[(x,y) for x  in range(3) for y in range(3)]
 print(pairs)
 
 words = ['hello', 'world']
