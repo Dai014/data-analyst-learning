@@ -8,8 +8,6 @@ name = "Data Analyst"
 # List example
 numbers = [1, 2, 3, 4, 5]
 
-doubleNumber = [x*2 for x in numbers]
-
 # Dictionary example
 person = {
     "name": "John",
@@ -58,6 +56,9 @@ def find_min(lst):
 def filter_gioi(students):
     return [s for s in students if s["score"] >= 8.0]
 
+#List Comprehension
+numbers2 = [x**2 for x in range(10)]
+
 
 # Example usage
 if __name__ == "__main__":
@@ -78,4 +79,4 @@ if __name__ == "__main__":
         {"name": "Hùng", "score": 6.5}
     ]))
 
-    print(doubleNumber);
+    print(numbers2);

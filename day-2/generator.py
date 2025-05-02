@@ -37,9 +37,7 @@ def counter():
 
 c = counter()
 print(list(c))
-print(next(c))
 c.close()
-
 
 def infinite_primes():
     def is_prime(n):

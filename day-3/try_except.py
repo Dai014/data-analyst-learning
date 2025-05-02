@@ -35,3 +35,11 @@ with open("students.csv", "r", encoding="utf-8") as file:
     reader = csv.DictReader(file)
     for row in reader:
         print(row["name"],"==>" ,row["subject"], "==>",row["score"])
+
+try:
+    with open('non_existent.csv', 'r') as file:
+        print(file.read())
+except FileNotFoundError:
+    print("File không tồn tại!")
+except PermissionError:
+    print("Không có quyền truy cập file!")
